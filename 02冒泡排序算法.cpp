@@ -19,17 +19,19 @@ int main(){
     {
         cout<<arr[i]<<endl;
     }
-    for (int i = 0; i < (sizeof(arr)/sizeof(arr[0])-1); i++)
+
+    for (int i = 0; i < (sizeof(arr)/sizeof(arr[0])-1); i++) //排序总轮数：元素个数-1
     {
-        for (int j = 0; j < ((sizeof(arr)/sizeof(arr[0])-1)-i-1) ; j++)
+        for (int j = 0; j < ((sizeof(arr)/sizeof(arr[0])-1)-i-1) ; j++)//每轮对比次数 = 元素个数-排序轮数-1
         {
-            if(arr[j]>arr[j+1]){
+            if(arr[j]>arr[j+1]){ //交换代码
             int temp = arr[j];
             arr[j] = arr[j+1];
             arr[j+1] = temp;
         }
         }
     }
+
       cout<<"排序后："<<endl;
     for(int i=0;i<sizeof(arr)/sizeof(arr[0]);i++)
     {
