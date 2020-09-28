@@ -13,6 +13,17 @@ void swap(int &a,int &b){
     a=b;
     b=temp; 
 }
+
+
+// 常量引用：const type & var 
+// 使用场景：用来修饰形参，防止参数传递后被修改（误操作）。
+void swap(const int &a,const int &b){
+    int temp = a;
+    a=b;
+    b=temp; 
+}
+
+// 如果函数的返回值是引用，函数调用可以作为左值；
 int main(){
     int a = 10;
     int &b = a ;//b是a的别名
