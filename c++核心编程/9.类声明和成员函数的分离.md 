@@ -1,0 +1,7 @@
+## 类声明和成员函数的分离
+一个头文件放声明；
+一个cpp文件放函数定义；
+主程序类的实例化；
+//student.h
+//student.cpp
+// StudentMian.cpp
