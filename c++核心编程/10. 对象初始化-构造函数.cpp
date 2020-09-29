@@ -4,7 +4,7 @@
 //初始化的三种方式：1、类内构造函数内直接初始化
 //2、类外构造函数初始化
 //3、带参数的构造函数
-//4、参数初始化表
+//4、参数初始化表:
 #include<iostream>
 using namespace std;
 
@@ -47,6 +47,7 @@ class Time4{
 };
 
 Time4::Time4(int h):hour(h){} //利用参数初始化表对数据成员初始化
+
 void Time4::showtime(){
     cout<<hour<<endl;
 }
